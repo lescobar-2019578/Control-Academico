@@ -1,0 +1,431 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Control Escolar",
+    "dateExported": "2024-03-03T20:38:18.368Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "1b499148-322d-42c1-935c-6b3befb74b00",
+            "name": "User",
+            "containerId": "",
+            "created": "2024-02-23T06:29:29.723Z",
+            "sortNum": 20000,
+            "settings": {
+                "headers": [
+                    {
+                        "name": "token",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQ4M2M0ZmIzNGYxMjE0YjY5M2IwNDAiLCJ1c2VybmFtZSI6ImNlc2NvYmFyIiwibmFtZSI6IkNhcmxvcyIsInJvbGUiOiJURUFDSEVSX1JPTEUiLCJpYXQiOjE3MDk0OTE4NDYsImV4cCI6MTcwOTUwMjY0Nn0.LtCxFEYror_1_LNgvjFMp6JlKbWixncuk-SYUtC53mA"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "30bc6b65-3d78-4da2-a5cf-b458fc8ab9f5",
+            "name": "Assign",
+            "containerId": "",
+            "created": "2024-02-23T06:47:24.374Z",
+            "sortNum": 20000,
+            "settings": {
+                "headers": [
+                    {
+                        "name": "token",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQ4M2JkMGIzNGYxMjE0YjY5M2IwM2MiLCJ1c2VybmFtZSI6Imxlc2NvYmFyIiwibmFtZSI6IkxsYW5lbCIsInJvbGUiOiJTVFVERU5UX1JPTEUiLCJpYXQiOjE3MDk0OTUxOTMsImV4cCI6MTcwOTUwNTk5M30.YvcBIsBPsttFmPvZGr3FVOcJFpNN4AEWNPWA29IL3EI"
+                    }
+                ]
+            }
+        },
+        {
+            "_id": "9ea4a2c7-1d70-4a74-b6de-3089c744c544",
+            "name": "Course",
+            "containerId": "",
+            "created": "2024-03-03T18:43:09.301Z",
+            "sortNum": 30000,
+            "settings": {
+                "headers": [
+                    {
+                        "name": "token",
+                        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQ4M2M0ZmIzNGYxMjE0YjY5M2IwNDAiLCJ1c2VybmFtZSI6ImNlc2NvYmFyIiwibmFtZSI6IlJpY2FyZG8iLCJyb2xlIjoiVEVBQ0hFUl9ST0xFIiwiaWF0IjoxNzA5NDk3MDc5LCJleHAiOjE3MDk1MDc4Nzl9.hRpFE9I-0TdIG-Jm63W5KV6RIAfrCss5ND7h3PDl8fs"
+                    }
+                ]
+            }
+        }
+    ],
+    "requests": [
+        {
+            "_id": "0903e4b6-9199-443e-9533-9c7ea96956f6",
+            "colId": "358e646a-1057-45cd-a19e-fa6cbcdc82b8",
+            "containerId": "1b499148-322d-42c1-935c-6b3befb74b00",
+            "name": "Login",
+            "url": "user/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-02-23T06:29:29.725Z",
+            "modified": "2024-03-03T20:17:59.319Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "cescobar"
+                    },
+                    {
+                        "name": "password",
+                        "value": "123456789"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "195a5b08-9bf1-4820-b97a-c4ea44a2b057",
+            "colId": "358e646a-1057-45cd-a19e-fa6cbcdc82b8",
+            "containerId": "1b499148-322d-42c1-935c-6b3befb74b00",
+            "name": "RegisterTeacher",
+            "url": "user/registerTeacher",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-02-23T06:29:29.725Z",
+            "modified": "2024-03-03T18:50:28.781Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Carlos"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Escobar"
+                    },
+                    {
+                        "name": "username",
+                        "value": "cescobar"
+                    },
+                    {
+                        "name": "password",
+                        "value": "123456789"
+                    },
+                    {
+                        "name": "email",
+                        "value": "cescobar-2019689@kinal.edu.gt"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "30331603"
+                    },
+                    {
+                        "name": "role",
+                        "value": "TEACHER_ROLE",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "e14312fd-7d4e-4b42-aa03-4c28a5b181b3",
+            "colId": "358e646a-1057-45cd-a19e-fa6cbcdc82b8",
+            "containerId": "30bc6b65-3d78-4da2-a5cf-b458fc8ab9f5",
+            "name": "AssignCourse",
+            "url": "assign/assignCourse",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-02-23T06:48:01.598Z",
+            "modified": "2024-03-03T19:49:22.799Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "student",
+                        "value": "65d83bd0b34f1214b693b03c"
+                    },
+                    {
+                        "name": "course",
+                        "value": "65e4c860308168b7baa1f132"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "f01b400e-82e3-4bf6-9f6e-fadc57f543f6",
+            "colId": "358e646a-1057-45cd-a19e-fa6cbcdc82b8",
+            "containerId": "1b499148-322d-42c1-935c-6b3befb74b00",
+            "name": "RegisterStudent",
+            "url": "registerStudent",
+            "method": "POST",
+            "sortNum": 55000,
+            "created": "2024-02-23T06:33:33.898Z",
+            "modified": "2024-02-23T06:33:33.898Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Llanel"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Escobar"
+                    },
+                    {
+                        "name": "username",
+                        "value": "lescobar"
+                    },
+                    {
+                        "name": "password",
+                        "value": "123456789"
+                    },
+                    {
+                        "name": "email",
+                        "value": "lescobar-2019689@kinal.edu.gt"
+                    },
+                    {
+                        "name": "phone",
+                        "value": "30331603"
+                    },
+                    {
+                        "name": "role",
+                        "value": "ADMIN",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "d50c2a0b-c1f8-4e0c-a6c0-1a885930c1ae",
+            "colId": "358e646a-1057-45cd-a19e-fa6cbcdc82b8",
+            "containerId": "1b499148-322d-42c1-935c-6b3befb74b00",
+            "name": "Update",
+            "url": "user/updateUser/65d83c4fb34f1214b693b040",
+            "method": "PUT",
+            "sortNum": 70000,
+            "created": "2024-02-23T06:29:29.726Z",
+            "modified": "2024-03-03T19:14:51.774Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Ricardo"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "9b05020d-696c-4bbe-87c9-3bb0283dcb60",
+            "colId": "358e646a-1057-45cd-a19e-fa6cbcdc82b8",
+            "containerId": "1b499148-322d-42c1-935c-6b3befb74b00",
+            "name": "deleteU",
+            "url": "deleteUser/65d83bd0b34f1214b693b03c",
+            "method": "DELETE",
+            "sortNum": 100000,
+            "created": "2024-02-23T06:29:29.726Z",
+            "modified": "2024-02-23T06:43:19.340Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQ4M2M0ZmIzNGYxMjE0YjY5M2IwNDAiLCJ1c2VybmFtZSI6ImNlc2NvYmFyIiwibmFtZSI6IkNhcmxvcyIsInJvbGUiOiJURUFDSEVSX1JPTEUiLCJpYXQiOjE3MDg2NzA0ODQsImV4cCI6MTcwODY4MTI4NH0.nDM8_aVK6If-Gb1Ix0hIVN-ZitbjLX74kkOqk456QgE"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "df114a0d-9e57-4f78-922b-033cf47d91ea",
+            "colId": "358e646a-1057-45cd-a19e-fa6cbcdc82b8",
+            "containerId": "9ea4a2c7-1d70-4a74-b6de-3089c744c544",
+            "name": "Add",
+            "url": "course/addCourse",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2024-03-03T18:44:40.342Z",
+            "modified": "2024-03-03T18:52:00.911Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "name",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Matematica"
+                    },
+                    {
+                        "name": "description",
+                        "value": "vemos la hiperbola y tipos de graficas"
+                    },
+                    {
+                        "name": "price",
+                        "value": "150"
+                    },
+                    {
+                        "name": "duration",
+                        "value": "3 meses"
+                    },
+                    {
+                        "name": "teacher",
+                        "value": "65d83c4fb34f1214b693b040"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "df93e628-0cef-49f9-9652-377ad28174bf",
+            "colId": "358e646a-1057-45cd-a19e-fa6cbcdc82b8",
+            "containerId": "9ea4a2c7-1d70-4a74-b6de-3089c744c544",
+            "name": "update ",
+            "url": "course/updateCourse/65e4c860308168b7baa1f132",
+            "method": "PUT",
+            "sortNum": 130000,
+            "created": "2024-03-03T19:05:22.118Z",
+            "modified": "2024-03-03T19:10:22.023Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Matematicas"
+                    },
+                    {
+                        "name": "description",
+                        "value": "simplificacion, derivadas por medio de limites"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "912e15ce-c04f-4682-ada1-32aa3dfea537",
+            "colId": "358e646a-1057-45cd-a19e-fa6cbcdc82b8",
+            "containerId": "9ea4a2c7-1d70-4a74-b6de-3089c744c544",
+            "name": "delete",
+            "url": "course/deleteCourses/65e4cb3b21555cca0eeb4ea2",
+            "method": "DELETE",
+            "sortNum": 140000,
+            "created": "2024-03-03T19:05:31.723Z",
+            "modified": "2024-03-03T20:33:06.020Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a7b7b74e-cce1-4d12-b7d8-2c99713bab38",
+            "colId": "358e646a-1057-45cd-a19e-fa6cbcdc82b8",
+            "containerId": "9ea4a2c7-1d70-4a74-b6de-3089c744c544",
+            "name": "search by teacher",
+            "url": "course/searchCoursesTeacher",
+            "method": "POST",
+            "sortNum": 150000,
+            "created": "2024-03-03T19:05:47.540Z",
+            "modified": "2024-03-03T20:28:01.765Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "teacher",
+                        "value": "65d83c4fb34f1214b693b040"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "ddad4f0c-207c-4b80-8df2-5dc0ce128035",
+            "colId": "358e646a-1057-45cd-a19e-fa6cbcdc82b8",
+            "containerId": "9ea4a2c7-1d70-4a74-b6de-3089c744c544",
+            "name": "Get courses",
+            "url": "course/getCourses",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2024-03-03T19:06:02.932Z",
+            "modified": "2024-03-03T19:11:18.365Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "name",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Matematica",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "description ",
+                        "value": "Derivadas y algebra III",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "e1fd1669-0afa-4fa3-8b46-b3e50593b2f7",
+            "colId": "358e646a-1057-45cd-a19e-fa6cbcdc82b8",
+            "containerId": "30bc6b65-3d78-4da2-a5cf-b458fc8ab9f5",
+            "name": "find",
+            "url": "assign/findCourseStudent",
+            "method": "POST",
+            "sortNum": 180000,
+            "created": "2024-03-03T19:52:27.335Z",
+            "modified": "2024-03-03T19:53:01.558Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "lescobar"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:5434/"
+        }
+    }
+}
