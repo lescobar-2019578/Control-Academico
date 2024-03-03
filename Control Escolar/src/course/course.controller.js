@@ -41,15 +41,12 @@ export const deleteCourses = async (req, res) => {
         let { uid } = jwt.verify(token,process.env.SECRET_KEY )
         let user = await User.findById(uid);
 
-        // Verifica si el usuario existe
         if (!user) {
             return res.status(404).send({ message: 'User not found' });
         }
 
-        // Verifica si el usuario es el propietario del curso
         let course = await Course.findOne({ _id: id, teacher: uid });
 
-        // Si el curso no pertenece al usuario, no se permite eliminar
         if (!course) {
             return res.status(403).send({ message: 'You are not authorized to delete this course' });
         }
@@ -100,7 +97,7 @@ export const updateCourses = async (req, res) => {
         if (!updatedCourse)
         return res.status(401).send({ message: 'Course not found and not updated' })
 
-        await AssingCourse.updateMany(
+        await  AssignCourse.updateMany(
             { course: id },
             { $set: { course: updatedCourse } }
             ) 
