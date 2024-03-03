@@ -11,7 +11,7 @@ const api = Router()
 
 api.post('/addCourse', [validateJwt, isTeacher], addCourse)
 api.delete('/deleteCourses/:id', [validateJwt, isTeacher], deleteCourses)
-api.put('/updateCourses/:id', [validateJwt, isTeacher], updateCourses)
+api.put('/updateCourse/:id', [validateJwt, isTeacher], updateCourses)
 api.post('/searchCoursesTeacher', [validateJwt, isTeacher], searchCoursesTeacher)
 api.get('/getCourses', getCourses)
 

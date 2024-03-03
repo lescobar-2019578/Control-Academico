@@ -20,9 +20,9 @@ app.use(helmet())
 app.use(cors())
 
 // Routes
-app.use(userRouter)
-app.use(courseRouter)
-app.use(assignCourseRouter)
+app.use('/user',userRouter)
+app.use('/course',courseRouter)
+app.use('/assign',assignCourseRouter)
 
 export const initServer = () => {
     app.listen(port, () => {
