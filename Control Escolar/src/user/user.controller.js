@@ -97,7 +97,6 @@ export const updateUser = async (req, res) => { //Datos generales (No password)
         //Validar si data trae datos
         let update = checkUpdate(data, id)
         if (!update) return res.status(400).send({ message: 'Have submitted some data that cannot be updated or missing data' })
-        //Validar si tiene permisos (tokenización) X Hoy No lo vemos X
         //Actualizar (DB)
         let updatedUser = await User.findOneAndUpdate(
             { _id: id }, //ObjectsId <- hexadecimales (Hora sys, Version Mongo, Llave privada...)
